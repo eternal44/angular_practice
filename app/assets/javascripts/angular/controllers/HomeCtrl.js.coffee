@@ -1,3 +1,3 @@
 @restauranteur.controller 'HomeCtrl', ['$scope', ($scope) ->
-  $scope.foo ='bar'
+  $scope.message ='Welcome to the Restauranteur!'
 ]
