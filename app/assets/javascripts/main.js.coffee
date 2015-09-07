@@ -2,8 +2,12 @@
 
 @restauranteur.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.
-    otherwise({
-      templateUrl: '../templates/home.html',
-      controller: 'HomeCtrl'
-    })
+  when('/restaurants', {
+    templateUrl: '../templates/restaurants/index.html',
+    controller: 'RestaurantIndexCtrl'
+  }).
+  otherwise({
+    templateUrl: '../templates/home.html',
+    controller: 'HomeCtrl'
+  })
 ])
